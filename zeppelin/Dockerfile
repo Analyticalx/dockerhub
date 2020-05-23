@@ -28,9 +28,13 @@ COPY zeppelin-env.sh /opt/zeppelin-0.8.2-bin-all/conf/zeppelin-env.sh
 
 COPY start.sh start.sh
 
-RUN chmod +x start.sh
+WORKDIR /root
+
+COPY sample.txt /root/
+
+RUN chmod +x /start.sh
 
 EXPOSE 8080 
 
-CMD ./start.sh
+CMD /start.sh
 
