@@ -1,1 +1,1 @@
-docker build -t analytcalx/zeppelin .
+docker build -t analyticalx/zeppelin .
